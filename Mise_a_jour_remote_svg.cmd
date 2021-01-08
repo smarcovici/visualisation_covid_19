@@ -1,5 +1,5 @@
-set ARG=%1
+set Commentaire=%1
 cd C:\Users\sylvain_2\Documents\Python Scripts\Beyond_basics\Covid_19\Covid_19\Surveillance_deconfinement\Images
 git add .
-if not defined ARG (git commit -m "test 4") else (git commit -m %1)
+if not defined Commentaire (git commit -m "Pas de commentaire") else (git commit -m Commentaire)
 git push -u origin master
